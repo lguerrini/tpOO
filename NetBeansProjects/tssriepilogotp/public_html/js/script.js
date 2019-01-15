@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+ 
 function saluta() {
     //recupero le info dalla pagina html e le metto in variabili per poterle usare
     //dagli oggetti input prendo il valore dell'attributo value
