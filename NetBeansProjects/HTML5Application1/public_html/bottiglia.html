@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/bottiglia.js"></script>
+       <style>
+            input{ min-width: 150px}
+            #dbox {
+                width:300px;
+                height: 300px;
+                background-color: lightblue;
+                border: solid 1px;
+                position: absolute;
+            }
+            #dbot{
+                width: 100px;
+                height: 200px;
+                position: absolute;
+                bottom: 0px;
+                left:   100px;
+                background-color: darkblue; 
+            }
+            
+        </style>
+    </head>
+    <body>
+        <input id="in_marca" placeholder="ins. marca"> 
+        <input id="in_capacita" placeholder="ins. capacita'">
+        <input type="button"  onclick="creaBottiglia()" value="Crea la Bottiglia">
+        <div id="d_ris" style="min-height: 60px">---</div>
+        <hr>
+        <input type="button"  onclick="bevoBottiglia()" value="Bevo">
+        <input id="in_quantobevo" onchange="refresh()" type="range" step="10" min="0" max="100" value="0"> 
+        <span id="sp_bevo" >0</span>
+        <hr>
+         <input type="button" onclick="riempioBottiglia()" value="Riempio"><input id="in_quantoriempio" onchange="refresh()" step="10" type="range" min="0" max="100" value="0"> 
+        <span  id="sp_riempio">0</span>
+        <hr>
+        <div id="dbox">
+            <div id="dbot"></div>
+            
+            
+        </div>
+    </body>
+</html>
+

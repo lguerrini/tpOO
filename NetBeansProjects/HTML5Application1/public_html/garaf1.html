@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <script src="js/garaf1.js"></script>
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <input id="in_pilota" placeholder="nome pilota"> 
+        <input id="in_auto" placeholder="nome auto"><br>
+        <input type="button" value="Add partecipante" onclick="addPartecipante()">
+        <input type="button" value="set griglia partenza" onclick="setGriglia()">
+        <br>
+        risultati :<input id="in_griglia" placeholder="ins griglia"> 
+        <input id="in_risultato" placeholder="ins risultato"> 
+        <input type="button" value="Ins Risultato" onclick="setRisultato()">
+        <input type="button" value="Print risultati" onclick="printRisSort()">
+        <div id="d_ris">---</div>
+        <div id="stage" style="position: absolute; width:400px;height:400px;background-color: yellow"></div>
+    </body>
+</html>
