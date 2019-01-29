@@ -9,9 +9,14 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/objdefClass.js"></script>
         <script src="js/esempioClass.js"></script>
     </head>
-    <body>
-        <div>TODO write content</div>
+    <body onload="init()">
+        <div id="d_ris">TODO write content</div>
+        <div>punti squadra di casa <input id="inpt1" type="number" >
+            - punti ospiti <input id="inpt2" type="number" ><br>
+            <button onclick="addRisultato()">Ins risultato</button>"
+        </div>
     </body>
 </html>
