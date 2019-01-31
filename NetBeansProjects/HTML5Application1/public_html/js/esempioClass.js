@@ -53,20 +53,25 @@ function init() {
 }
 
 
-function selPartita(){
-    let ris=0;
+function selPartita() {
+    let ris = 0;
     return ris;
 }
-function addRisultato(){
-  let pt1=document.getElementById("inpt1").value*1;  
-  let pt2=document.getElementById("inpt2").value*1;  
-  let indexP=document.getElementById("s_partite").value;  
-  let camp=lega.el_campionati[0];
-  let part=camp.el_partite[indexP];
-  part.pt1=pt1;
-  part.pt2=pt2;
-  document.getElementById("d_ris").innerHTML = lega.el_campionati[0].visPartite();
-  
+function addRisultato() {
+    let pt1 = document.getElementById("inpt1").value * 1;
+    let pt2 = document.getElementById("inpt2").value * 1;
+    let indexP = document.getElementById("s_partite").value;
+    if (indexP == "")
+    {
+        alert("devi selezionare una partita");
+        return;
+    }
+    let camp = lega.el_campionati[0];
+    let part = camp.el_partite[indexP];
+    part.pt1 = pt1;
+    part.pt2 = pt2;
+    document.getElementById("d_ris").innerHTML = lega.el_campionati[0].visPartite();
+
 }
 
 /*
